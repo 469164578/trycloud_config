@@ -39,3 +39,14 @@ spring:
       password: 1234
   application:
     name: trycloud-config-eureka-client
+eureka:
+  server:
+    eviction-interval-timer-in-ms: 1000
+    enable-self-preservation: false
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://fxy:1234@localhost:7001/eureka
+  instance:
+    hostname: localhost
